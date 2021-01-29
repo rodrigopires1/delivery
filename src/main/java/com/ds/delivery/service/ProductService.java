@@ -26,12 +26,4 @@ public class ProductService {
         }.getType());
     }
 
-    public ProductDto entityToDto(Product product) {
-        return modelMapper.map(product, ProductDto.class);
-    }
-
-    public Product dtoToEntity(ProductDto productDto) {
-        return modelMapper.map(productDto, Product.class);
-    }
-
 }
